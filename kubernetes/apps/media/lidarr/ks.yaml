@@ -16,7 +16,7 @@ spec:
    # - name: longhorn
     #  namespace: longhorn-system
   interval: 1h
-  path: ./kubernetes/apps/media/lidarr/appp
+  path: ./kubernetes/apps/media/lidarr/app
   postBuild:
     substitute:
       APP: *app
