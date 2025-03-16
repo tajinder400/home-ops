@@ -33,6 +33,7 @@ spec:
       app.kubernetes.io/name: *app
   interval: 1h
   path: ./kubernetes/apps/observability/nut-exporter/dashboard
+  prune: true
   retryInterval: 2m
   sourceRef:
     kind: GitRepository
