@@ -31,12 +31,7 @@ spec:
     remediation:
       strategy: rollback
       retries: 3
-  dependsOn:
-    - name: prometheus-operator-crds
-      namespace: observability
-    - name: openebs
-      namespace: openebs-system
-values:
+  values:
     crds:
       enabled: true
       upgradeJob:
